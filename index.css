@@ -18,6 +18,16 @@
     padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
     background-color: #000000; /* ヘッダーの背景色を指定する */
   } 
+  
+  .Footer {
+    position: fixed; /* フッターを固定する */
+    bottom: 0; /* 上部から配置の基準位置を決める */ 
+    left: 0; /* 左から配置の基準位置を決める */ 
+    width: 100%; /* フッターの横幅を指定する */
+    height: 35px; /* フッターの高さを指定する */
+    padding:10px; /* フッター内側の余白を指定する(上下左右) */
+    background-color: #000000; /* フッターの背景色を指定する */
+    } 
 
   body {
     height: 100vh;
@@ -83,3 +93,35 @@
     80% {transform: translateX(0) rotate(180deg);}
     100% {transform: translateX(0) rotate(360deg);}
   }
+
+.btn-border {
+  border: 2px solid #eaff00;
+  border-radius: 0;
+  background: #000;
+  color: #fff;
+  
+  -webkit-transform-style: preserve-3d;
+  
+  transform-style: preserve-3d;
+}
+  
+.btn-border:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 5px;
+  height: 100%;
+  
+  content: '';
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background: #000;
+}
+.btn-border:hover {
+    background: #000;
+}
+  
+.btn-border:hover:before {
+    background: #ffffff;
+}
