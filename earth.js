@@ -41,7 +41,7 @@ function init() {
 
   // 平行光源
   const light = new THREE.DirectionalLight(0XFFFFFF);
-  light.intensity = 10; // 光の強さを倍に
+  light.intensity = 1; // 光の強さを倍に
   light.position.set(1, 1, 1); // ライトの方向
 
 
