@@ -20,8 +20,8 @@ function init() {
   camera.position.set(0, 0, 1000);
 
   // 箱を作成
-  const geometry = new THREE.BoxGeometry(200, 200, 200);
-  const material = new THREE.MeshStandardMaterial({color: 0x0000FF});
+  const geometry = new THREE.BoxGeometry(200, 200, 200); 
+  const material = new THREE.MeshStandardMaterial({color: 0x0000FF}); 
   const box = new THREE.Mesh(geometry, material);
   scene.add(box);
 
@@ -46,3 +46,4 @@ function init() {
     renderer.render(scene, camera);
   }
 }
+
