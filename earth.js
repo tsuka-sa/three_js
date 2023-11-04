@@ -31,7 +31,7 @@ function init() {
 
   // 背景画像を読み込む
   const loader = new THREE.TextureLoader();
-  loader.load('./assets/back.jpg' , function(texture) {
+  loader.load('assets/back.jpg' , function(texture) {
     const bgGeometry = new THREE.PlaneGeometry(1200, 800); // パネルを用意して
     const bgMaterial = new THREE.MeshBasicMaterial({ map: texture });
     const bgMesh = new THREE.Mesh(bgGeometry, bgMaterial); // 画像を貼る
